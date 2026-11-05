@@ -1,0 +1,38 @@
+body {
+  background-color: #FFFBF5; 
+}
+
+h1 {
+font-size: 137.77px; 
+font-family: "new-spirit-compressed", sans-serif;
+font-weight: 600;
+font-style: italic;
+color: #F36B2B;
+
+text-align: center;
+
+}
+
+.top-containers {
+  display: flex; 
+  width: 100%; 
+  margin-bottom: 70px;  
+}
+
+.bottom-containers {
+  width: 100%; 
+  display: flex; 
+  margin-bottom: 65px; 
+
+}
+
+.box {
+  width: 409px; 
+  height: 319px; 
+  border: 1px solid black; 
+  border-radius: 26px; 
+}
+
+.item { 
+  text-align: center; 
+}
