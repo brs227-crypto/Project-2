@@ -16,23 +16,107 @@ text-align: center;
 .top-containers {
   display: flex; 
   width: 100%; 
+  margin-top: 10px;
   margin-bottom: 70px;  
+  gap: 20px; 
 }
 
 .bottom-containers {
   width: 100%; 
   display: flex; 
   margin-bottom: 65px; 
+  gap: 20px; 
 
 }
 
 .box {
   width: 409px; 
   height: 319px; 
-  border: 1px solid black; 
   border-radius: 26px; 
+
 }
 
 .item { 
   text-align: center; 
+  font-size: 22px; 
+  color: #8C4C13; 
+  background-color: #F5F0E7; 
+  border-radius: 100px;  
+  padding: 13px 22px;
+  margin-top: 7px; 
+  margin-bottom: 12px; 
 }
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:nth-child?*/
+
+.top-containers > .box:nth-child(1) > .box {
+  background-color: #F0687F;
+  }
+
+.top-containers > .box:nth-child(2) > .box {
+  background-color: #F4CFD9;
+}
+
+.top-containers > .box:nth-child(3) > .box {
+  background-color: #F36B2B;
+}
+
+.top-containers > .box:nth-child(4) > .box {
+  background-color: #F4E1C3;
+}
+
+.top-containers > .box:nth-child(5) > .box {
+  background-color: #F0687F;
+}
+
+.bottom-containers > .box:nth-child(1) > .box {
+  background-color: #F36B2B;
+}
+
+.bottom-containers > .box:nth-child(2) > .box {
+  background-color: #F4E1C3;
+}
+
+.bottom-containers > .box:nth-child(3) > .box {
+  background-color: #F4CFD9;
+}
+
+.bottom-containers > .box:nth-child(4) > .box {
+  background-color: #F0687F;
+}
+
+.bottom-containers > .box:nth-child(5) > .box {
+  background-color: #F36B2B;
+}
+
+.box > .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Image-1 {
+  width: 425px;
+  height: 287px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
