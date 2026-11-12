@@ -1,0 +1,61 @@
+body {
+	background-color: #FFFBF5;;
+}
+
+h1 {
+font-family: "bookmania", serif;
+font-weight: 600;
+font-style: normal;
+color: #8C4C13;
+margin-top: 30px;
+transform: rotate(-90deg);
+transform-origin: top left; 
+position: relative; 
+top: 400px;
+}
+
+h2 {
+font-family: "bookmania", serif;
+font-weight: 400;
+font-style: normal;
+color: #8C4C13;
+padding-bottom: 0px;
+margin: 0;
+}
+
+ul {
+font-family: "futura-pt", sans-serif;
+font-weight: 00;
+font-style: normal;
+font-size: 1.5em; 
+line-height: 2em;
+margin:0;
+}
+
+p {
+font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5em;
+line-height: 2em;
+margin-top: 0;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  margin: auto 120px;
+}
+
+.ingredients {
+  flex: 1;
+  width: 12em; 
+  margin: 0;
+}
+
+.directions {
+  flex: 2;
+  min-width: 0;
+}
