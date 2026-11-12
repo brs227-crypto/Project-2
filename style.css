@@ -8,14 +8,14 @@ font-family: "new-spirit-compressed", sans-serif;
 font-weight: 600;
 font-style: italic;
 color: #F36B2B;
-margin: 40px auto; 
+margin: 40px auto 30px auto; 
 text-align: center;
 
 }
 
 /*https://www.youtube.com/watch?v=KD1Yo8a_Qis*/
 .carousel {
-  margin: 40px auto 10px auto; 
+  margin: 20px auto 10px auto; 
   width: 100%; 
   display: flex;
   overflow-x: hidden; 
@@ -23,24 +23,19 @@ text-align: center;
 }
 
 .carousel-bottom {
-  margin: 40px auto; 
+  margin: 10px auto; 
   width: 100%; 
   display: flex;
   overflow-x: hidden; 
   gap: 1em;
-  scrollbar-width: none;
 }
 
-.carousel:hover .top-containers,
-.carousel-bottom:hover .bottom-containers {
-  animation-play-state: paused;
-}
 
 
 .top-containers {
   display: flex; 
   width: 220em; 
-  margin: 0 0px 60px 0;
+  margin: 0 0px 10px 0;
   gap: 1em; 
   justify-content: center; 
   align-items: center;
@@ -50,14 +45,13 @@ text-align: center;
 .bottom-containers {
   display: flex; 
   width: 220em; 
-  margin-bottom: 60px; 
+  margin: 0 0 60px 0;
   gap: 1em; 
   justify-content: center; 
   align-items: center;
-  animation: spin 30s infinite linear; 
+  animation: spin 30s infinite linear;
   animation-direction: reverse; 
 }
-
 
 .set {
   flex: 0 0 5em;
@@ -66,7 +60,7 @@ text-align: center;
   border-radius: 26px;
   text-align: center; 
   align-content: center; 
-  border: 3px solid red;
+  justify-content: center; 
 }
 
 .item { 
@@ -82,6 +76,14 @@ text-align: center;
   margin-top: 7px; 
 }
 
+img {
+  width: 18em;
+  position: absolute;
+  margin-top: 38px;
+  margin-left: 45px;
+  align-content: center;
+}
+
 
 a {
   text-decoration: none; 
@@ -92,45 +94,47 @@ a {
 
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:nth-child?*/
 
-.top-containers > .box:nth-child(1) > .set {
+.top-containers > a:nth-child(1) .set {
   background-color: #F0687F;
   }
 
-.top-containers > .box:nth-child(2) > .set {
+.top-containers > a:nth-child(2) .set {
   background-color: #F4CFD9;
 }
 
-.top-containers > .box:nth-child(3) > .set {
+.top-containers > a:nth-child(3) .set {
   background-color: #F36B2B;
 }
 
-.top-containers > .box:nth-child(4) > .set {
+.top-containers > a:nth-child(4) .set {
   background-color: #F4E1C3;
 }
 
-.top-containers > .box:nth-child(5) > .set {
+.top-containers > a:nth-child(5) .set {
   background-color: #F0687F;
 }
 
-.bottom-containers > .box:nth-child(1) > .set {
+.bottom-containers > a:nth-child(1) .set {
   background-color: #F36B2B;
 }
 
-.bottom-containers > .box:nth-child(2) > .set {
+.bottom-containers > a:nth-child(2) .set {
   background-color: #F4E1C3;
 }
 
-.bottom-containers > .box:nth-child(3) > .set {
+.bottom-containers > a:nth-child(3) .set {
   background-color: #F4CFD9;
 }
 
-.bottom-containers > .box:nth-child(4) > .set {
+.bottom-containers > a:nth-child(4) .set {
   background-color: #F0687F;
 }
 
-.bottom-containers > .box:nth-child(5) > .set {
+.bottom-containers > a:nth-child(5) .set {
   background-color: #F36B2B;
 }
+
+
 
 
 
@@ -140,6 +144,7 @@ a {
 from {translate: 0;}
 to {translate: -100%}
 }*/
+
 
 
 
