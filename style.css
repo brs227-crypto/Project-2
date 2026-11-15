@@ -3,12 +3,12 @@ body {
 }
 
 h1 {
-font-size: 137.77px; 
+font-size: clamp(70px, 12vw, 137.77px);
 font-family: "new-spirit-compressed", sans-serif;
 font-weight: 600;
 font-style: italic;
 color: #F36B2B;
-margin: 40px auto 30px auto; 
+margin: 40px 40px 30px 40px; 
 text-align: center;
 
 }
@@ -29,7 +29,6 @@ text-align: center;
   overflow-x: hidden; 
   gap: 1em;
 }
-
 
 
 .top-containers {
@@ -90,8 +89,6 @@ a {
 }
 
 
-
-
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:nth-child?*/
 
 .top-containers > a:nth-child(1) .set {
@@ -134,16 +131,112 @@ a {
   background-color: #F36B2B;
 }
 
+.image-3 {
+margin-top: 25px;
+margin-left: 50px;
+}
 
 
-
-
-
-
-/*@keyframes spin {
+@keyframes spin {
 from {translate: 0;}
 to {translate: -100%}
-}*/
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+  .top-containers[aria-hidden],
+  .bottom-containers[aria-hidden] {
+    display: none;
+  }
+
+
+  .top-containers,
+  .bottom-containers {
+    animation: none;
+    translate: none;
+  }
+
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 20px 60px;
+  }
+
+
+  h1 {
+  font-size: clamp(70px, 10vw, 137.77px);
+  grid-column: 1 / -1;
+  grid-column: 1 / -1;
+  margin: 20px 20px 10px;
+  }
+
+
+  .carousel,
+  .carousel-bottom,
+  .top-containers,
+  .bottom-containers {
+    display: contents;
+  }
+
+
+  .box,
+  .set {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .box {
+  position: relative;
+}
+
+.box img {
+  width: 75%;
+  height: auto;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+  .set {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 6 / 5;
+}
+
+  .box img {
+    max-width: 100%;
+  }
+
+  .item {
+     font-size: clamp(18px, 10vw, 22px);
+  }
+}
+
+ @media screen and (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+    padding: 20px 40px;
+  }
+
+  .top-containers a,
+  .bottom-containers a {
+    width: 100%;
+    flex: none;
+  }
+
+  .box {
+    width: 100%;
+  }
+}
+}
+
+
 
 
 

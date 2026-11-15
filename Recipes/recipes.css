@@ -1,17 +1,35 @@
 body {
-	background-color: #FFFBF5;;
+  background-color: #FFFBF5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+	flex: 1;
 }
 
 h1 {
 font-family: "bookmania", serif;
-font-weight: 600;
+font-weight: 400;
 font-style: normal;
-color: #8C4C13;
-margin-top: 30px;
-transform: rotate(-90deg);
-transform-origin: top left; 
-position: relative; 
-top: 400px;
+color: #FFFBF5;
+align-content: center;
+position: ;
+float: right; 
+margin: 10px 30px 10px auto;
+}
+
+.border {
+	background-color: #F0687F;
+	width: 100vh;
+	margin-left: 0;
+	position: fixed;
+	transform: rotate(-90deg);
+	transform-origin: top left;
+	left: 0px;
+	top: 100vh;
 }
 
 h2 {
@@ -41,6 +59,15 @@ line-height: 2em;
 margin-top: 0;
 }
 
+img {
+	width: 22em; 
+	border: 2 px solid blue;
+	margin-top: 30px;
+	margin-left: 90px;
+
+}
+
+
 .recipe {
   display: flex;
   flex-direction: row;
@@ -52,10 +79,69 @@ margin-top: 0;
 .ingredients {
   flex: 1;
   width: 12em; 
-  margin: 0;
+  margin-top: 60px;
 }
 
 .directions {
   flex: 2;
   min-width: 0;
+  margin-top: 60px;
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 120px;
+}
+
+.left {
+display: flex; 
+align-items: center;
+justify-content: flex-start;
+gap: 15px
+}
+
+.arrow {
+	width: 2em;
+	margin: 0;
+	display: block;
+}
+
+h3 {
+	margin: 0;
+	line-height: 1;
+	font-family: "bookmania", serif;
+	font-weight: 300;
+	font-family: ;font-style: normal;
+	color: #8C4C13;
+}
+
+.left a, .right a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+ text-decoration: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.right a {
+  flex-direction: row-reverse;
+}
+
+.arrow-right {
+	width: 2em;
+	margin: 0;
+	display: block;
+	transform: rotate(180deg);
+	transform-origin: center;
+}
+
+
+
