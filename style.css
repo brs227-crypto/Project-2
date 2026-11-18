@@ -10,6 +10,7 @@ font-style: italic;
 color: #F36B2B;
 margin: 40px 40px 30px 40px; 
 text-align: center;
+white-space: nowrap;
 
 }
 
@@ -83,6 +84,24 @@ img {
   align-content: center;
 }
 
+.image-3 {
+  margin-top: 27px;
+}
+.image-4 {
+  width: 17em;
+  margin-top: 23px;
+  margin-left: 55px;
+}
+
+.image-6 {
+  margin-top: 27px;
+  margin-left: 48px;
+}
+
+.image-7 {
+  margin-top: 20px;
+  margin-left: ;
+}
 
 a {
   text-decoration: none; 
@@ -131,10 +150,6 @@ a {
   background-color: #F36B2B;
 }
 
-.image-3 {
-margin-top: 25px;
-margin-left: 50px;
-}
 
 
 @keyframes spin {
@@ -168,8 +183,7 @@ to {translate: -100%}
 
 
   h1 {
-  font-size: clamp(70px, 10vw, 137.77px);
-  grid-column: 1 / -1;
+  font-size: clamp(90px, 12vw, 137.77px);
   grid-column: 1 / -1;
   margin: 20px 20px 10px;
   }
@@ -218,7 +232,9 @@ to {translate: -100%}
   }
 }
 
- @media screen and (max-width: 600px) {
+
+
+ @media screen and (max-width: 760px) {
   main {
     grid-template-columns: 1fr;
     padding: 20px 40px;
@@ -227,7 +243,7 @@ to {translate: -100%}
   .top-containers a,
   .bottom-containers a {
     width: 100%;
-    flex: none;
+    flex-shrink: 5;
   }
 
   .box {
